@@ -3,8 +3,7 @@ from urllib.parse import quote, unquote
 
 import discord
 
-import os
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.environ.get('DISCORD_TOKEN', '')
 KANAL_ID = 1487580690987090063
 
 def parse_link(raw):
