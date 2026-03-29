@@ -1,6 +1,6 @@
+import os
 import re
 from urllib.parse import quote, unquote
-
 import discord
 
 TOKEN = os.environ.get('DISCORD_TOKEN', '')
